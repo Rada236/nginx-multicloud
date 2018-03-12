@@ -1,13 +1,31 @@
 <html>
 <header><title>Spinnaker</title></header>
+
 <body>
-   
+
+<div align="center">
+
 <h1> Spinnaker - Multicloud </h1>
 
 <img src="https://seeklogo.com/images/S/spinnaker-logo-32C3D1CDDF-seeklogo.com.png" alt="Spinnaker Logo" >
    
- <p>Aplikace s web servrem nginx nasazena na Microsoft Azure a Google Cloud platform.</p>
- <p>Vyuziva Docker kontejnery a orchestracni nastroj Kubernetes</p>
- 
+<p>Aplikace nasazena na Microsoft Azure a Google Cloud platform.</p>
+
+
+<p>Click the button to display the hostname of the current URL.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = location.hostname;
+    document.getElementById("demo").innerHTML= x;
+}
+</script>
+
+
+</div>
 </body>
 </html>
