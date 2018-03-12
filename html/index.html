@@ -1,31 +1,38 @@
 <html>
 <header><title>Spinnaker</title></header>
-
 <body>
 
-<div align="center">
+  <div align="center">
 
-<h1> Spinnaker - Multicloud </h1>
+    <h1> Spinnaker - Multicloud </h1>
 
-<img src="https://seeklogo.com/images/S/spinnaker-logo-32C3D1CDDF-seeklogo.com.png" alt="Spinnaker Logo" >
+    <img src="https://seeklogo.com/images/S/spinnaker-logo-32C3D1CDDF-seeklogo.com.png" alt="Spinnaker Logo" >
    
-<p>Aplikace nasazena na Microsoft Azure a Google Cloud platform.</p>
+    <p>Aplikace nasazena do prostredi - Microsoft Azure a Google Cloud platform.</p>
 
+    <b>Cas a datum:</b> 
 
-<p>Click the button to display the hostname of the current URL.</p>
+    <p id="date"></p>
 
-<button onclick="myFunction()">Try it</button>
+  <script>
+    document.getElementById("date").innerHTML = Date();
+  </script>
 
-<p id="demo"></p>
+    <p>
+    <b>Web server Nginx:</b>
+    </p>
 
-<script>
-function myFunction() {
-    var x = location.hostname;
-    document.getElementById("demo").innerHTML= x;
-}
-</script>
+    <button onclick="myFunction()">IP adresa</button>
 
+    <p id="ip"></p>
 
+  <script>
+      function myFunction() {
+      var x = location.hostname;
+      document.getElementById("ip").innerHTML= x;
+      }
+  </script>
+  
 </div>
 </body>
 </html>
